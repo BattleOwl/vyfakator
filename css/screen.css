@@ -7,27 +7,38 @@ body {
 
 h1 {
 	font-weight: lighter;
+	cursor: pointer;
 }
 
-.footer {
-	margin-top: 20px;
-	width: 100%;        
-}
+
 
 input {
-	background-color: silver;
-	border: 1px solid silver;
-	border-radius: 7px;
+	background-color: #ffffff;
+	border: 1px solid #ececec;
 	box-shadow: 1px 2px 2px;
 	color: black;
-	padding: 15px 45px;
+	height:200px;
+	width: 200px;
+	-webkit-border-radius:100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
 	cursor: pointer;
+	-webkit-transition: all ease 300ms;
+	-moz-transition: all ease 300ms;
+	-ms-transition: all ease 300ms;
+	-o-transition: all ease 300ms;
+	transition: all ease 300ms;
 }
 
 input:hover{
 	box-shadow: none;
 	margin-top: 1px;
 	margin-left: 2px;
+	-webkit-transition: all ease 300ms;
+	-moz-transition: all ease 300ms;
+	-ms-transition: all ease 300ms;
+	-o-transition: all ease 300ms;
+	transition: all ease 300ms;
 }
 
 .container {
@@ -36,21 +47,20 @@ input:hover{
 	width: 80%;
 }
 
+.main-content {
+	padding-top: 50px;
+}
+
 .center {
 	text-align: center;
 	position: relative;
 }
 
-.mt-150 {
-	margin-top: 150px;
-}
-.mb-50 {
-	margin-bottom: 50px;
-}
 
 .text {
 	font-size: 30px;
 	margin-bottom: 15px;
+	position: relative;
 }
 .text .inner {
 	border: 2px solid;
@@ -69,4 +79,14 @@ input:hover{
 	top: 86px;
 	position: absolute;
 	width: 0;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: inline-block;
+	height: 60px;
+	background: #ececec;
+	line-height: 60px;
 }
