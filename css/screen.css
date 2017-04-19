@@ -5,11 +5,10 @@ body {
 	margin: 0;
 }
 
-h1 {
+h1, h2 {
 	font-weight: lighter;
 	cursor: pointer;
 }
-
 
 
 .btn {
@@ -48,12 +47,16 @@ h1 {
 }
 
 .main-content {
-	padding-top: 50px;
-	height: 60vh;
+	min-height: 60vh;
+	padding-top: 30px;
 	width: auto;
 	position: relative;
 }
-
+.big {
+	font-size: 25px;
+	font-weight: 600;
+	padding-bottom: 25px;
+}
 .center {
 	text-align: center;
 	position: relative;

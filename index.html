@@ -17,9 +17,8 @@
 
 	<body ng-app="Sven">
 
-		<header>
-			<div ng-include="'./components/header.htm'"></div>
-		</header>
+		<div ng-include="'./components/header.htm'"></div>
+
 
 		<article>
 			<section>
@@ -40,18 +39,29 @@
 						<input type="button" id="askl" value="Zeptej se Svena" class="btn" onClick="talk()">
 
 					</div>
-					<div class="clickOnSven">
-						<label for="callSven">Chceš si postěžovat? </label>
-						<input type="checkbox" id="callSven" ng-model="myCheck">
+					<div class="clickOnSven" ng-init="mySwitch=false">
+						<div class="big">
+							<label for="dontBeASven">
+								Snadno se urážíš? Tak zaklikni tento checkbox -->
+								<input type="checkbox" id="dontBeASven" ng-model="mySwitch">
+							</label>
+						</div>
+						<div class="big">
+							<label for="callSven">Chceš si na Vás stěžovat!
+								<input type="checkbox" id="callSven" ng-model="myCheck" ng-disabled="mySwitch">
+							</label>
+						</div>
 					</div>
+
+
 				</div>
 
 			</section>
 		</article>
 
-		<footer>
-			<div ng-include="'./components/footer.htm'"></div>
-		</footer>
+
+		<div ng-include="'./components/footer.htm'"></div>
+
 
 	</body>
 </html>
