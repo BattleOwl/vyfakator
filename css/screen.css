@@ -12,7 +12,7 @@ h1 {
 
 
 
-input {
+.btn {
 	background-color: #ffffff;
 	border: 1px solid #ececec;
 	box-shadow: 1px 2px 2px;
@@ -30,7 +30,7 @@ input {
 	transition: all ease 300ms;
 }
 
-input:hover{
+.btn:hover{
 	box-shadow: none;
 	margin-top: 1px;
 	margin-left: 2px;
@@ -49,6 +49,9 @@ input:hover{
 
 .main-content {
 	padding-top: 50px;
+	height: 60vh;
+	width: auto;
+	position: relative;
 }
 
 .center {
@@ -70,6 +73,9 @@ input:hover{
 	display: inline-block;
 }
 
+.ng-show {
+
+}
 
 .footer {
 	position: fixed;
